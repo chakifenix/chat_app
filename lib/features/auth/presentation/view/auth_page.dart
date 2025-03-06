@@ -140,7 +140,7 @@ class _AuthPageState extends State<AuthPage> {
                 ),
               ],
             ),
-            SizedBox(
+            const SizedBox(
               width: double.infinity,
               child: AuthButton(
                 title: 'Войти через Apple',
@@ -148,14 +148,14 @@ class _AuthPageState extends State<AuthPage> {
                 image: 'assets/apple.png',
               ),
             ),
-            SizedBox(
-              width: double.infinity,
-              child: AuthButton(
-                title: 'Войти через Facebook',
-                color: UiColor.darkest,
-                image: 'assets/apple.png',
-              ),
-            ),
+            // SizedBox(
+            //   width: double.infinity,
+            //   child: AuthButton(
+            //     title: 'Войти через Facebook',
+            //     color: UiColor.darkest,
+            //     image: 'assets/apple.png',
+            //   ),
+            // ),
           ],
         ),
       ),
