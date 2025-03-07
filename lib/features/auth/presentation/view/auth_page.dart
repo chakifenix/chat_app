@@ -187,13 +187,55 @@ class _AuthPageState extends State<AuthPage> {
                     width: double.infinity,
                     child: AuthButton(
                       onPressed: () {
-                        // showCupertinoDialog(
-                        //     context: context,
-                        //     builder: (BuildContext ctx) {
-                        //       return CupertinoAlertDialog(
-                        //         title: const Text('Please Confirm'),
-                        //       );
-                        //     });
+                        showCupertinoDialog(
+                            context: context,
+                            builder: (BuildContext ctx) {
+                              return CupertinoAlertDialog(
+                                title: Text(
+                                  'Номер указан верно?',
+                                  textAlign: TextAlign.left,
+                                  style: AppTextStyles.h6
+                                      .copyWith(color: UiColor.darkest),
+                                ),
+                                content: Column(
+                                  children: [
+                                    30.h,
+                                    Text(
+                                      '+7 (775) 880 33 88',
+                                      style: AppTextStyles.h4
+                                          .copyWith(color: UiColor.darkest),
+                                    ),
+                                    30.h,
+                                    Text(
+                                      'Наши роботы отправят SMS  с кодом активации на указанный номер',
+                                      style: AppTextStyles.h7
+                                          .copyWith(color: UiColor.dark),
+                                      textAlign: TextAlign.left,
+                                    )
+                                  ],
+                                ),
+                                actions: [
+                                  CupertinoDialogAction(
+                                    onPressed: () {
+                                      setState(() {
+                                        Navigator.of(context).pop();
+                                      });
+                                    },
+                                    textStyle: AppTextStyles.h7
+                                        .copyWith(color: UiColor.dark),
+                                    child: const Text('Изменить'),
+                                  ),
+                                  CupertinoDialogAction(
+                                    onPressed: () {
+                                      Navigator.of(context).pop();
+                                    },
+                                    textStyle: AppTextStyles.h7
+                                        .copyWith(color: UiColor.darkest),
+                                    child: const Text('Верно'),
+                                  )
+                                ],
+                              );
+                            });
                       },
                       title: 'Продолжить',
                       color: isFilled ? UiColor.primary : UiColor.lightest,
