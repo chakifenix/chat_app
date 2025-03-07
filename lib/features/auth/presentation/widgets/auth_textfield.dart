@@ -5,14 +5,13 @@ import 'package:flutter/services.dart';
 
 class AuthTextField extends StatelessWidget {
   final TextEditingController? controller;
-  const AuthTextField({
-    super.key,
-    this.controller,
-  });
+  final FocusNode? focusNode;
+  const AuthTextField({super.key, this.controller, this.focusNode});
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      focusNode: focusNode,
       controller: controller,
       keyboardType: TextInputType.number,
       inputFormatters: [
