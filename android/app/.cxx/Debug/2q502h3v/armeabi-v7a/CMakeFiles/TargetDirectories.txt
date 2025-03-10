@@ -1,0 +1,2 @@
+E:/Studio Projects/chat_app/android/app/.cxx/Debug/2q502h3v/armeabi-v7a/CMakeFiles/edit_cache.dir
+E:/Studio Projects/chat_app/android/app/.cxx/Debug/2q502h3v/armeabi-v7a/CMakeFiles/rebuild_cache.dir
