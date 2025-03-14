@@ -10,6 +10,10 @@ dependencies:
   flutter:
     sdk: flutter
   auto_hyphenating_text: ^0.3.0
+  mask_text_input_formatter: ^2.9.0
+  provider: ^6.1.2
+  pinput: ^5.0.1
+  flutter_svg: ^2.0.17
 
 dev_dependencies:
   flutter_test:
@@ -20,7 +24,9 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/
+    - assets/images/
+    - assets/icons/
+    - assets/fonts/
 
   fonts:
     - family: Gilroy

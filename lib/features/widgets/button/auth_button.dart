@@ -1,6 +1,7 @@
 import 'package:chat_app/core/styles/text_styles.dart';
 import 'package:chat_app/extensions/space_exs.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 class AuthButton extends StatelessWidget {
   final String title;
@@ -28,7 +29,7 @@ class AuthButton extends StatelessWidget {
           12.w,
           Text(
             title,
-            style: AppTextStyles.h7.copyWith(color: titleColor),
+            style: AppTextStyles.h7.copyWith(color: titleColor ?? Colors.white),
           ),
         ],
       ),
